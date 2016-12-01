@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Temperature</title>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open%20Sans">
+    <link rel="stylesheet" href=".../Pancake.io/w3.css">
+    <script>
+        var sEntry,fFahr,fCels
+        document.write("<h1>Welcome to my Temperature conversion program by me Dominic Rose</h1>");
+        sEntry=window.prompt("Which degrees measurement do you want?C to F or F to C");
+        if (sEntry=="C to F") {
+            fCels=(window.prompt("Enter degrees Celsius: ","0"));
+            fFahr=fCels*1.8+32;
+            document.write("<p>"+fCels+" degress Celsius= "+fFahr+" degress Fahrenheit</p>");
+            //code
+        }
+        else
+        {
+            fFahr=(window.prompt("Enter degrees Fahrenheit: ","0"));
+            fCels=(fFahr-32)/1.8;
+            document.write("<p>"+fFahr+" degrees Fahrenheit= "+fCels+" degrees Celsius</p>");
+        }
+        document.write("<p>Reload for another conversion</p>")
+    </script>
+</head>
+
+<body>
+<div class="dropdown">
+  <button class="Menu">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="Temp.html">Temperature Converter</a>
+    <a href="CasinoFinalProject.html">Casino</a>
+    <a href="whodidit.html">Exercise 4</a>
+    <a href="proposal.html">Site Plan</a>
+  </div>
+</div>
+<hr>
+<hr>
+<hr>
+<form>
+  <label for="sEntry">What do degrees do you want to convert to? C to F OR F to C</label>
+  <input type="text" id="sEntry" name="sEntry">
+  <label for="fDegrees">Degrees</label>
+  <input type="text" id="fDegrees" name="fDegrees">
+  <hr>
+  <input type="submit" value="Submit">
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Casino 2</title>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open%20Sans">
+    <link rel="stylesheet" href=".../Pancake.io/w3.css">
+    <script>
+        var fReceiptValTotal,fABlack,fABlue,fARed,fAGreen,fAPurple,fAGold,fTotalChipVal,fLocation,fTaxedWinnings,fWinnings,fTaxW,fCashOut,fBlack,fBlue,fRed,fGreen,fPurple,fGold
+        document.write("<h1>Welcome to my Casino Program by me Dominic Rose</h1>");
+        var fReceiptValTotal=window.prompt("What is your total receipt value?");
+        var fABlack=window.prompt("How many black chips did you have?");
+        var fBlack=fABlack*5
+        var fABlue=window.prompt("How many blue chips did you have?");
+        var fBlue=fABlue*20
+        var fARed=window.prompt("How many red chips did you have?");
+        var fRed=fARed*50
+        var fAGreen=window.prompt("How many green chips did you have?");
+        var fGreen=fAGreen*100
+        var fAPurple=window.prompt("How many purple chips did you have?");
+        var fPurple=fAPurple*500
+        var fAGold=window.prompt("How many gold chips did you have?");
+        var fGold=fAGold*1000
+        var fTotalChipVal=fBlack+fBlue+fRed+fGreen+fGold
+        if (fTotalChipVal>fReceiptValTotal) {
+           fWinnings=fTotalChipVal-fReceiptValTotal
+        }
+        var fLocation=window.prompt("Where do you live? Please select a number for your location.\n1) U.S. and Guam \n2) CNMI \n3) foreign resident");
+        if (fLocation=="1") {
+            fTaxedWinnings=fWinnings*.80
+            fTaxW=fWinnings*.20
+            fCashOut=fTaxedWinnings+fReceiptValTotal
+            
+        }
+        if (fLocation=="2") {
+            fTaxedWinnings=fWinnings*.90
+            fTaxW=fWinnings*.10
+            fCashOut=fTaxedWinnings+fReceiptValTotal
+           
+        }
+        if (fLocation=="3") {
+            fCashOut=fWinnings+fReceiptValTotal
+            fTaxW=0
+        }
+        if (fTotalChipVal<fReceiptValTotal) {
+            fCashOut=fTotalChipVal
+            document.write("Your Receipt total= "+fReceiptValTotal+". You had "+fABlack+" black chips, "+fABlue+" blue chips, "+fARed+" red chips, "+fAGreen+" green chips, "+fAPurple+ "purple chips, and "+fAGold+" gold chips. You had "+fTotalChipVal+" dollars in total chip value.");
+            document.write("You had 0 dollars in winnings. You had no dollars in tax withheld. You cashed out with "+fCashOut+" dollars in total.");
+        }
+        if (fTotalChipVal>fReceiptValTotal) {
+            document.write("Your Receipt total= "+fReceiptValTotal+". You had "+fABlack+" black chips, "+fABlue+" blue chips, "+fARed+" red chips, "+fAGreen+" green chips, "+fAPurple+" purple chips, and "+fAGold+" gold chips. You had "+fTotalChipVal+" dollars in total chip value.");
+            document.write("You had "+fWinnings+" dollars in winnings. You had "+fTaxW+" dollars in tax withheld. You cashed out with "+(fCashOut/1000)+" dollars in total.");
+        }
+    </script>
+</head>
+</body>
+<div class="dropdown">
+  <button class="Menu">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="Temp.html">Temperature Converter</a>
+    <a href="CasinoFinalProject.html">Casino</a>
+    <a href="whodidit.html">Exercise 4</a>
+    <a href="proposal.html">Site Plan</a>
+  </div>
+</html>
