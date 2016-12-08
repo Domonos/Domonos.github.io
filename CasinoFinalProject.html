@@ -28,8 +28,8 @@
         }
         var fLocation=window.prompt("Where do you live? Please select a number for your location.\n1) U.S. and Guam \n2) CNMI \n3) foreign resident");
         if (fLocation=="1") {
-            fTaxedWinnings=fWinnings*.80
-            fTaxW=fWinnings*.20
+            fTaxedWinnings=fWinnings*.90
+            fTaxW=fWinnings*.10
             fCashOut=fTaxedWinnings+fReceiptValTotal
             
         }
@@ -81,9 +81,9 @@
   <input type="text" id="Gold" name="Gold">
   <hr>
   <select id="country" name="country">
-    <option value="U.S.">18-28</option>
-    <option value="Guam">29-40</option>
-    <option value="CNMI">41+</option>
+    <option value="U.S.">U.S.</option>
+    <option value="Guam">Guam</option>
+    <option value="CNMI">CNMI</option>
   </select>
   <label for="SSN">SSN</label>
   <input type="text" id="SSN" name="SSN">
