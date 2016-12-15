@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ENB</title>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open%20Sans">
+    <link rel="stylesheet" href=".../Pancake.io/w3.css">
+</head>
+
+<body>
+     <div class="dropdown">
+  <button class="Menu">Menu</button>
+  <div class="dropdown-content">
+    <a href="PCMods.html">Introduction</a>
+    <a href="SupGames.html">Supported Games</a>
+    <a href="WepAndArm.html">Weapons/Armor</a>
+    <a href="Logic.html">Logic</a>
+    <a href="QuestAndMission.html">Quest/Missions</a>
+    <a href="Gadgets.html">Gadgets</a>
+    <a href="Visuals.html">Visuals</a>
+    <a href="ENB.html">ENB's</a>
+    <a href="NexusMods.html">Nexus</a>
+    <a href="Temp2.html">Temp Converter</a>
+  </div>
+</div>
+<br>
+<p id="shadow-box5">ENB</p>
+<hr>
+<p id="shadow-box1">Now these are pretty similar to the visual mods but these ENB mods overhaul the entire game instead of just parts like environments or shadows or textures. These mods are very demanding system wise but are beyond worth it.</p>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="FalloutENB1.jpg" style="width:100%">
+  <img class="mySlides" src="FalloutENB2.jpg" style="width:100%">
+  <img class="mySlides" src="FalloutENB3.jpg" style="width:100%">
+</div>
+<div id="grad1"></div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000); // Change image every 5 seconds
+}
+</script>
+
+
+
+</body>
+</html>

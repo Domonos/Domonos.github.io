@@ -57,13 +57,15 @@ div.container {
 #shadow-box1 {
     border-radius: 15px 50px;
     width: 300px;
-    height: 100px;
+    height: 200px;
     padding: 15px;
-    background-color: yellow;
-    box-shadow: 10px 10px 5px grey;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
     font-family: 'OpenSans';
-    text-shadow: 2px 2px 8px #FF0000;
+    text-shadow: 1px 1px 4px #000000;
      font-size: 18px;
+     border-style: solid;
+    border-color: black;
 }
 #shadow-box2 {
     position: relative;
@@ -72,10 +74,10 @@ div.container {
     width: 300px;
     height: 100px;
     padding: 15px;
-    background-color: yellow;
-    box-shadow: 10px 10px 5px grey;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
     font-family: 'OpenSans';
-    text-shadow: 2px 2px 8px #FF0000;
+    text-shadow: 2px 2px 8px #000000;
      font-size: 18px;
 }
 #shadow-box3 {
@@ -84,11 +86,39 @@ div.container {
     width: 300px;
     height: 100px;
     padding: 15px;
-    background-color: yellow;
-    box-shadow: 10px 10px 5px grey;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
     font-family: 'OpenSans';
-    text-shadow: 2px 2px 8px #FF0000;
+    text-shadow: 2px 2px 8px #000000;
      font-size: 18px;
+}
+#shadow-box4 {
+    position: relative;
+    border-radius: 15px 50px;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    font-family: 'OpenSans';
+    text-shadow: 2px 2px 8px #000000;
+     font-size: 18px;
+}
+#shadow-box5 {
+    position: relative;
+    border-radius: 15px 50px;
+    width: 300px;
+    height: 50px;
+    margin: 100px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    font-family: 'OpenSans';
+    text-shadow: 1px 1px 4px #000000;
+    font-size: 28px;
+    z-index: -1;
+    border-style: solid;
+    border-color: black;
 }
 div.img {
     margin: 5px;
@@ -110,14 +140,15 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-body {
-    background-color: blue;
-}
 h1 {
     color: white;
 }
 h3 {
     color: red;
+}
+h4 {
+    color: red;
+    font-family: 'OpenSans';
 }
 input[type=text] {
     width: 100%;
@@ -141,4 +172,19 @@ input[type=submit]{
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+.mySlides {
+    display:none;
+    padding-left: 325px;
+    border-left: 300px solid grey;
+    border-style: solid;
+    border-color: grey;
+}
+ #grad1 {
+    height: 200px;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, gray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, gray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, gray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, gray); /* Standard syntax (must be last) */
 }
